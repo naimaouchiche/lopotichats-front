@@ -1,5 +1,41 @@
-<div>
-    <p>Nom: <span>{{kitten.name}}</span></p>
-    <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
-    <p>Race: <span>{{kitten.race}}</span></p>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col m4 s6">
+            <div class="card horizontal" pkmnBorderCard>
+                <div class="card-image">
+                    <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">  
+                            <p>Nom: <span>{{kitten.name}}</span></p>
+   
+                            <p>Race: <span><small>{{kitten.race}}</small></span></p>
+                            
+                        </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div class="row">
+     <div *ngFor="let kitten of kittenList" class="col m4 s6">
+         <div class="card horizontal" pkmnBorderCard>
+             <div class="card-image">
+                <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
+             </div>
+             <div class="card-stacked">
+                 <div class="card-content">
+                     <p>{{ kitten.name }}</p> 
+                     <p><small>Race : {{ kitten.race }}</small></p>
+                 </div>
+             </div>
+     </div>
+     
+     </div> 
+ </div>
 </div>
+
+
+

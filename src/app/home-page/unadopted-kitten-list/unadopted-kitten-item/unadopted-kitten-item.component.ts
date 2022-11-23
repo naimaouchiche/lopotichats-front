@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { KITTEN } from 'src/app/mock-pokemon-list';
 import { Kitten } from 'src/app/models/kitten';
 
 @Component({
@@ -10,6 +11,8 @@ export class UnadoptedKittenItemComponent implements OnInit {
 
   @Input()
   kitten! : Kitten ;
+
+  kittenList: Kitten[] = KITTEN;
 
   constructor() { }
 
