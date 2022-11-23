@@ -1,0 +1,11 @@
+<div>
+    <p>Nom: <span>{{kitten.name}}</span></p>
+    <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
+    <p>Race: <span>{{kitten.race}}</span></p>
+    <p>Couleur: <span>{{kitten.color}}</span></p>
+    <p>Genre : {{kitten.sex}}</p>
+    <p>Age: <span>{{kitten.age}}</span></p>
+    <button type="button">Supprimer</button>
+    <button type="button">Modifier</button>
+    <button type="button">Adopter</button>
+</div>
