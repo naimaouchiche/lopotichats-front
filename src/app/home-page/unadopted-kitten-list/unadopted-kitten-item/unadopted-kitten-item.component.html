@@ -1,5 +1,24 @@
-<div>
-    <p>Nom: <span>{{kitten.name}}</span></p>
-    <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
-    <p>Race: <span>{{kitten.race}}</span></p>
+<div class="container">
+    <div class="row">
+        <div  class="col s4 m5">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img class="responsive-ing" src={{kitten.urlImage}}  />
+                    <span class="card-title" >{{kitten.name}}</span>
+                    <a href="" class="btn-floating halfway-fab pulse red"><i class="material-icons">+</i></a>
+                </div>
+             <div class="card-stacked">
+                 <div class="card-content">
+    <p style="font-size: 1.3rem">Nom: <span>{{kitten.name}}</span></p>
+    <p style="margin-top: 3rem">Race: <span>{{kitten.race}}</span></p>
+                </div>
+                <div class="card-action">
+                    <a [routerLink]="['cat', kitten.id]"> En savoir plus</a>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
 </div>
+
