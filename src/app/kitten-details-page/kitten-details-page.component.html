@@ -1,11 +1,23 @@
-<div>
-    <p>Nom: <span>{{kitten.name}}</span></p>
-    <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
-    <p>Race: <span>{{kitten.race}}</span></p>
-    <p>Couleur: <span>{{kitten.color}}</span></p>
-    <p>Genre : {{kitten.sex}}</p>
-    <p>Age: <span>{{kitten.age}}</span></p>
-    <button type="button">Supprimer</button>
-    <button type="button">Modifier</button>
-    <button type="button">Adopter</button>
+<div class="container">
+    <div class="row">
+        <div  class="center">
+            <div class="card horizontal">
+                <div class="card-image">
+    <a [routerLink]="['cat', kitten.id]"><img class="responsive-ing" src={{kitten.urlImage}}  /></a>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p style="font-size: 3rem">Nom: <span>{{kitten.name}}</span></p>
+                        <p style="font-size: 1.5rem">Race: <span>{{kitten.race}}</span></p>
+                        <p>Couleur: <span>{{kitten.color}}</span></p>
+                        <p>Genre : {{kitten.sex}}</p>
+                        <p style="height: 3rem">Age: <span>{{kitten.age  + " ans"}}</span></p>
+                        <button  class="btn" type="button">Modifier</button>
+                        <button  class="red btn" type="button">Adopter</button>
+                        <button class="black btn" type="button">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

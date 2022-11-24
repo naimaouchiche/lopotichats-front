@@ -1,41 +1,26 @@
-<!-- <div class="container">
-    <div class="row">
-        <div class="col m4 s6">
-            <div class="card horizontal" pkmnBorderCard>
-                <div class="card-image">
-                    <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">  
-                            <p>Nom: <span>{{kitten.name}}</span></p>
-   
-                            <p>Race: <span><small>{{kitten.race}}</small></span></p>
-                            
-                        </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 
 <div class="container">
     <div class="row">
-     <div *ngFor="let kitten of kittenList" class="col m4 s6">
-         <div class="card horizontal" pkmnBorderCard>
-             <div class="card-image">
-                <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
-             </div>
+        <div  class="col s4 m5">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img class="responsive-ing" src={{kitten.urlImage}}  />
+                    <span class="card-title" >{{kitten.name}}</span>
+                    <a href="" class="btn-floating halfway-fab pulse red"><i class="material-icons">+</i></a>
+                </div>
              <div class="card-stacked">
                  <div class="card-content">
-                     <p>{{ kitten.name }}</p> 
-                     <p><small>Race : {{ kitten.race }}</small></p>
-                 </div>
-             </div>
-     </div>
-     
-     </div> 
- </div>
+    <p style="font-size: 1.3rem">Nom: <span>{{kitten.name}}</span></p>
+    <p style="margin-top: 3rem">Race: <span>{{kitten.race}}</span></p>
+                </div>
+                <div class="card-action">
+                    <a [routerLink]="['cat', kitten.id]"> En savoir plus</a>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
 </div>
-
 
 
