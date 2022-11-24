@@ -1,0 +1,28 @@
+    <h2>Ajouter un lopotichat</h2>
+    <div>
+        <label>
+            nom
+        </label>
+        <input type="text" name="name" [(ngModel)]="kittenUpdate.name"/>
+        <label>
+            Age
+        </label>
+        <input type="text" name="age" [(ngModel)]="kittenUpdate.age" />
+        <label>
+            color
+        </label>
+        <input type="text" name="color" [(ngModel)]="kittenUpdate.color" />
+        <label>
+            race
+        </label>
+        <input type="text" name="race" [(ngModel)]="kittenUpdate.race" />
+        <label>
+            sex
+        </label>
+        <input type="text" name="sex" [(ngModel)]="kittenUpdate.sex" />
+        <label>
+            urlImage
+        </label>
+        <input type="text" name="name" [(ngModel)]="kittenUpdate.urlImage" value="img"/>
+        <button (click)="update()">Modifier</button>
+    </div>

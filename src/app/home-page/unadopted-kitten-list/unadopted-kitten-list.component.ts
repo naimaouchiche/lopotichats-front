@@ -17,5 +17,6 @@ export class UnadoptedKittenListComponent implements OnInit {
   ngOnInit(): void {
     this.kittenServive.findAllUnAdopdtedCats().subscribe(kittens => this.unadoptedKittens = kittens);
   }
+  
 
 }

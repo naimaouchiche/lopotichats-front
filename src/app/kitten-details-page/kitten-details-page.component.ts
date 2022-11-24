@@ -21,5 +21,8 @@ export class KittenDetailsPageComponent implements OnInit {
 
     })
   }
+  onDelete(id: number): void {
+    this.service.delete(id); 
+  }
 
 }

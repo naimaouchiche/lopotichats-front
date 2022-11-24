@@ -18,4 +18,13 @@ export class KittenService {
   findCatById(id: number): Observable<Kitten>{
     return this.http.get<Kitten>(KittenService.API_URL + '/' + id);
   }
+  delete(id: number) {
+    return this.http.delete(KittenService.API_URL + '/' + id).subscribe(res => console.log(res));
+  }
+  update(id: number, kitten: Kitten): Observable<object> {
+    return this.http.put(KittenService.API_URL + '/' + id, kitten);
+  }
+  findAllAdopdtedCats(): Observable<Kitten[]>{
+    return this.http.get<Kitten[]>(KittenService.API_URL + '?isAdopted=true');
+  }
 }
