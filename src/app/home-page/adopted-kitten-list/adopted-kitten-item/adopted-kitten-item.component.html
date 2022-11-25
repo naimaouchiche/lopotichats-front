@@ -1,17 +1,17 @@
 <div class="container">
     <div class="row">
-     <div class="col m4 s6">
-         <div class="card horizontal" pkmnBorderCard>
+     <div class="col s6">
+         <div class="card horizontal">
              <div class="card-image">
                 <a [routerLink]="['cat', kitten.id]"><img src={{kitten.urlImage}}  /></a>
              </div>
              <div class="card-stacked">
                  <div class="card-content">
-                    <p style="font-size: 1.3rem">Nom: <span>{{kitten.name}}</span></p>
+                    <p style="font-size: 1.5rem">Nom: <span>{{kitten.name}}</span></p>
                     <p style="margin-top: 3rem">Race: <span>{{kitten.race}}</span></p>
                  </div>
                  <div class="card-action">
-                    <a [routerLink]="['cat', kitten.id]"> En savoir plus</a>
+                    <a [routerLink]="['/cat', kitten.id]"> En savoir plus</a>
                 </div>
              </div>
             </div>

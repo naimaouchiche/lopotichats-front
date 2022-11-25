@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { KittenService } from '../kitten.service';
 import { Kitten } from '../models/kitten';
 
@@ -12,7 +12,7 @@ export class KittenDetailsPageComponent implements OnInit {
   kitten!: Kitten;
   
 
-  constructor(private route: ActivatedRoute, private service: KittenService) { }
+  constructor(private route: ActivatedRoute, private service: KittenService, private router : Router) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -22,7 +22,9 @@ export class KittenDetailsPageComponent implements OnInit {
     })
   }
   onDelete(id: number): void {
-    this.service.delete(id); 
+    this.service.delete(id).subscribe(()=> this.router.navigate([""])); 
   }
-
+  onAdopted(id:number,): void {
+    this.service.adopted(id).subscribe( () => this.router.navigate([""]));
+  }
 }

@@ -33,7 +33,11 @@ export class UpdateKittenComponent implements OnInit {
     })
   }
   update(){
-    this.kittenService.update(this.id, this.kittenUpdate).subscribe(()=>this.routeur.navigate([""]))
+    console.log(this.kittenUpdate);
+    
+    this.kittenService.update(this.id, this.kittenUpdate
+      
+      ).subscribe(()=>this.routeur.navigate([""]))
   }
   
 }

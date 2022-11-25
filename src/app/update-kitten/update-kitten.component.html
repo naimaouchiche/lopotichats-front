@@ -1,9 +1,17 @@
-    <h2>Ajouter un lopotichat</h2>
-    <div>
+<h2 class="center text">Modifier le lopotichat</h2>
+<!-- <div class="row">.
+        <form class="col s12 m6">
+            <div class="row">
+            <div class="input-field col s6">
         <label>
             nom
         </label>
-        <input type="text" name="name" [(ngModel)]="kittenUpdate.name"/>
+        <input type="text" name="name" [(ngModel)]="kittenUpdate.name"/></div>
+        <div class="input-field col s6">
+            <label>
+                age
+            </label>
+            <input type="text" name="name" [(ngModel)]="kittenUpdate.age"/></div>
         <label>
             Age
         </label>
@@ -24,5 +32,27 @@
             urlImage
         </label>
         <input type="text" name="name" [(ngModel)]="kittenUpdate.urlImage" value="img"/>
-        <button (click)="update()">Modifier</button>
+        <button (click)="update()" class="btn" type="button">Modifier</button>
     </div>
+    </form>
+    </div>
+ -->
+<div class="container">
+    <form class="col s12 m6">
+        <label>nom</label>
+        <input type="text" name="name" [(ngModel)]="kittenUpdate.name "/>
+        <label>age</label>
+        <input type="text" name="age" [(ngModel)]="kittenUpdate.age" />
+        <label>color</label>
+        <input type="text" name="color" [(ngModel)]="kittenUpdate.color" />
+        <label>sexe</label>
+        <input type="text" name="sex" [(ngModel)]="kittenUpdate.sex" />
+        <label>race</label>
+        <input type="text" name="race" [(ngModel)]="kittenUpdate.race" />
+        <label>urlImage</label>
+        <input type="text" name="image" [(ngModel)]="kittenUpdate.urlImage" value="img" />
+    </form>
+    <div class="container">  
+        <button (click)="update()" class="btn waves-effect waves-light" type="submit">Modifier</button>
+    </div> 
+</div>

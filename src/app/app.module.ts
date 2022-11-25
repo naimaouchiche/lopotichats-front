@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { AdoptedKittenListComponent } from './home-page/adopted-kitten-list/adopted-kitten-list.component';
 import { AdoptedKittenItemComponent } from './home-page/adopted-kitten-list/adopted-kitten-item/adopted-kitten-item.component';
 import { HeaderComponent } from './header/header.component';
+import { CreateKittenComponent } from './home-page/create-kitten/create-kitten.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HeaderComponent } from './header/header.component';
     UpdateKittenComponent,
     AdoptedKittenListComponent,
     AdoptedKittenItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    CreateKittenComponent
   ],
   imports: [
     BrowserModule,
