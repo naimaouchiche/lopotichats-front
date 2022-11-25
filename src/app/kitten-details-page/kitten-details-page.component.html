@@ -13,7 +13,7 @@
                         <p>Genre : {{kitten.sex}}</p>
                         <p style="height: 3rem">Age: <span>{{kitten.age  + " ans"}}</span></p>
                         <a [routerLink]="['/update',kitten.id]"><button  class="btn" type="button">Modifier</button></a>
-                        <button  class="red btn" type="button">Adopter</button>
+                        <button (click)="onAdopted(kitten.id)"  class="red btn" type="button">Adopter</button>
                         <button (click)="onDelete(kitten.id)" class="black btn" type="button">Supprimer</button>
                     </div>
                 </div>

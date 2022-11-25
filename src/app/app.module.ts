@@ -7,7 +7,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { UnadoptedKittenListComponent } from './home-page/unadopted-kitten-list/unadopted-kitten-list.component';
 import { UnadoptedKittenItemComponent } from './home-page/unadopted-kitten-list/unadopted-kitten-item/unadopted-kitten-item.component';
 import { KittenDetailsPageComponent } from './kitten-details-page/kitten-details-page.component';
-import { BorderCardDirective } from './border-card.directive';
 import { kittenTypeColorPipe } from './kitten-type-color.pipe';
 import { UpdateKittenComponent } from './update-kitten/update-kitten.component';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +17,6 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // BorderCardDirective,
     kittenTypeColorPipe,
     HomePageComponent,
     UnadoptedKittenListComponent,

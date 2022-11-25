@@ -1,28 +1,37 @@
     <h2>Ajouter un lopotichat</h2>
-    <div>
-        <label>
+    <div class="container">
+        <div class="row">
+            <div class="col s8">
+               
+                    <div class="card-image">
+        <label class="card-content">
             nom
         </label>
-        <input type="text" name="name" [(ngModel)]="kittenUpdate.name"/>
-        <label>
+        <input  type="text" name="name" [(ngModel)]="kittenUpdate.name"/>
+        <label class="card-content">
             Age
         </label>
         <input type="text" name="age" [(ngModel)]="kittenUpdate.age" />
-        <label>
+        <label class="card-content">
             color
         </label>
         <input type="text" name="color" [(ngModel)]="kittenUpdate.color" />
-        <label>
+        <label class="card-content">
             race
         </label>
         <input type="text" name="race" [(ngModel)]="kittenUpdate.race" />
-        <label>
+        <label class="card-content">
             sex
         </label>
         <input type="text" name="sex" [(ngModel)]="kittenUpdate.sex" />
-        <label>
+        <label class="card-content">
             urlImage
         </label>
         <input type="text" name="name" [(ngModel)]="kittenUpdate.urlImage" value="img"/>
         <button (click)="update()">Modifier</button>
-    </div>
+        
+                    </div> 
+                </div>
+            </div>
+        </div>
+    

@@ -27,4 +27,7 @@ export class KittenService {
   findAllAdopdtedCats(): Observable<Kitten[]>{
     return this.http.get<Kitten[]>(KittenService.API_URL + '?isAdopted=true');
   }
+  adopted(id: number): Observable<Kitten> {
+    return this.http.post<Kitten>(KittenService.API_URL + "/" + id + '/adopt',{});
+  }
 }
