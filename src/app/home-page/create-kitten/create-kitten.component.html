@@ -1,0 +1,19 @@
+<div class="container">
+    <form class="col s12 m6">
+        <label>nom</label>
+        <input type="text" name="name" [(ngModel)]="kittenCreate.name "/>
+        <label>age</label>
+        <input type="text" name="age" [(ngModel)]="kittenCreate.age" />
+        <label>color</label>
+        <input type="text" name="color" [(ngModel)]="kittenCreate.color" />
+        <label>sexe</label>
+        <input type="text" name="sex" [(ngModel)]="kittenCreate.sex" />
+        <label>race</label>
+        <input type="text" name="race" [(ngModel)]="kittenCreate.race" />
+        <label>urlImage</label>
+        <input type="text" name="image" [(ngModel)]="kittenCreate.urlImage" value="img" />
+    </form>
+    <div class="container">  
+        <button (click)="createKitten()" class="btn waves-effect waves-light" type="submit">Creer un lopotichat</button>
+    </div> 
+</div>
